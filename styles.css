@@ -1,0 +1,69 @@
+/* For mobile phones: */
+
+/* Set font for site */
+html{
+    font-family: "Barlow", "PT Sans", Calibri, Tahoma, sans-serif;
+    font-weight:300;
+    /* Top-Bottom Left-Right*/
+    margin:10px 10px;
+}
+/* Header */
+header{
+    display:flex;
+    /* Create space between Name + Nav */
+    justify-content: space-between;
+    /* Necessary to align Name and Main Nav blocks */
+    align-items: center;
+}
+/* Job Title*/
+small{
+    color: #a7a7a7;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px;
+}
+/* Name*/
+h1{
+    font-size: 18px;
+    font-weight:300;
+}
+/* Align h1 Name and small Job Title*/
+.site-name{
+    display:flex;
+    align-items: first baseline;  
+}
+
+/* Flex box around Moon Icon and Main Nav on right */
+.main-nav{
+    display: flex;
+    align-items: center;
+}
+/* Moon Icon*/
+header>div>img{
+    width: 20px;
+    height:fit-content;
+    padding: -20px 0px 0px 0px;
+
+    /* I don't understand the vertical alignment within the flexbox, margin/padding are the only ways I could get it to move down from the upper right corner - in .main-nav - center put it below the text baseline, baseline didn't work, Defaults to top right */
+
+}
+/* Main Nav*/
+nav>ul{
+    display:flex;
+    list-style: none;
+}
+nav>ul>li>a{ 
+    float: left;
+    color: #a7a7a7;
+    text-align: right;
+    font-size: 16px;
+    /* Padding Top Right Bottom Left */
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+}
+nav>ul>li>a:hover{
+    color: rgb(207, 12, 96);
+}
+/* Body */
+
+
