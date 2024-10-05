@@ -1,11 +1,14 @@
 /* For mobile phones: */
 
 /* Set font for site */
+*{
+    Margin: 0;
+}
 html{
     font-family: "Barlow", "PT Sans", Calibri, Tahoma, sans-serif;
-    font-weight:300;
+    font-weight:100;
     /* Top-Bottom Left-Right*/
-    margin:10px 10px;
+    /*margin:1rem 2rem;*/
 }
 /* Header */
 header{
@@ -14,43 +17,57 @@ header{
     justify-content: space-between;
     /* Necessary to align Name and Main Nav blocks */
     align-items: center;
+    padding: 1rem 3rem;
+    /*For testing:
+    background-color: red;*/
+}
+
+/* Align h1 Name and small Job Title*/
+.site-name{
+    display:flex;  
+    align-items: baseline;
+    /*For testing:
+    background-color: rgb(161, 90, 167)*/
+}
+/* Name*/
+h1{
+    font-size: 18px;
+    font-weight:300;
+    /*For testing:
+    background-color: rgb(69, 227, 87)*/
+
 }
 /* Job Title*/
 small{
     color: #a7a7a7;
     font-size: 14px;
     font-weight: 600;
-    padding: 8px;
-}
-/* Name*/
-h1{
-    font-size: 18px;
-    font-weight:300;
-}
-/* Align h1 Name and small Job Title*/
-.site-name{
-    display:flex;
-    align-items: first baseline;  
+    padding-left: 8px;
+    /*For testing:
+    background-color: rgb(69, 209, 227) */
 }
 
 /* Flex box around Moon Icon and Main Nav on right */
 .main-nav{
     display: flex;
     align-items: center;
+    /*For testing:
+    background-color: blanchedalmond;*/
 }
 /* Moon Icon*/
-header>div>img{
+header>div>a>img{
     width: 20px;
     height:fit-content;
-    padding: -20px 0px 0px 0px;
-
-    /* I don't understand the vertical alignment within the flexbox, margin/padding are the only ways I could get it to move down from the upper right corner - in .main-nav - center put it below the text baseline, baseline didn't work, Defaults to top right */
-
+    margin-top: -0.5rem;
+    /*For testing:
+    background-color: blueviolet;*/
 }
 /* Main Nav*/
 nav>ul{
     display:flex;
     list-style: none;
+    /*For testing:
+    background-color: rgb(45, 7, 93);*/
 }
 nav>ul>li>a{ 
     float: left;
@@ -58,12 +75,16 @@ nav>ul>li>a{
     text-align: right;
     font-size: 16px;
     /* Padding Top Right Bottom Left */
-    padding: 5px 10px 5px 10px;
+    padding: 1rem 10px 1rem 10px;
     text-decoration: none;
+    /*For testing:
+    background-color: rgb(240, 162, 110);*/
 }
 nav>ul>li>a:hover{
     color: rgb(207, 12, 96);
 }
 /* Body */
+main{
 
+}
 
