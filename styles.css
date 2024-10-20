@@ -18,23 +18,23 @@ header{
     /* Necessary to align Name and Main Nav blocks */
     align-items: center;
     padding: 1rem 3rem;
-    /*For testing:
-    background-color: red;*/
+    /*For testing:*/
+    background-color: red;
 }
 
 /* Align h1 Name and small Job Title*/
 .site-name{
     display:flex;  
     align-items: baseline;
-    /*For testing:
-    background-color: rgb(161, 90, 167)*/
+    /*For testing:*/
+    background-color: rgb(161, 90, 167)
 }
 /* Name*/
 h1{
     font-size: 18px;
     font-weight:300;
-    /*For testing:
-    background-color: rgb(69, 227, 87)*/
+    /*For testing:*/
+    background-color: rgb(69, 227, 87)
 
 }
 /* Job Title*/
@@ -43,31 +43,31 @@ small{
     font-size: 14px;
     font-weight: 600;
     padding-left: 8px;
-    /*For testing:
-    background-color: rgb(69, 209, 227) */
+    /*For testing:*/
+    background-color: rgb(69, 209, 227)
 }
 
 /* Flex box around Moon Icon and Main Nav on right */
 .main-nav{
     display: flex;
     align-items: center;
-    /*For testing:
-    background-color: blanchedalmond;*/
+    /*For testing:*/
+    background-color: blanchedalmond;
 }
 /* Moon Icon*/
 header>div>a>img{
     width: 20px;
     height:fit-content;
     margin-top: -0.5rem;
-    /*For testing:
-    background-color: blueviolet;*/
+    /*For testing:*/
+    background-color: blueviolet;
 }
 /* Main Nav*/
 nav>ul{
     display:flex;
     list-style: none;
-    /*For testing:
-    background-color: rgb(45, 7, 93);*/
+    /*For testing:*/
+    background-color: rgb(45, 7, 93);
 }
 nav>ul>li>a{ 
     float: left;
@@ -77,8 +77,8 @@ nav>ul>li>a{
     /* Padding Top Right Bottom Left */
     padding: 1rem 10px 1rem 10px;
     text-decoration: none;
-    /*For testing:
-    background-color: rgb(240, 162, 110);*/
+    /*For testing:*/
+    background-color: rgb(240, 162, 110);
 }
 nav>ul>li>a:hover{
     color: rgb(207, 12, 96);
