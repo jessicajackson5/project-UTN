@@ -1,12 +1,22 @@
 /* For mobile phones: */
-
-/* Set font for site */
-*{
-    Margin: 0;
+/* Variables */
+:root{
+    --size-1: 0.9rem;
+    --size-2: 1.2rem;
+    --size-3: 1.5rem;
+    --size-4: 1.8rem;
+    --size-5: 2.1rem;
 }
-html{
+/* Set site-wide properties */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: "Barlow", "PT Sans", Calibri, Tahoma, sans-serif;
     font-weight:100;
+}
+html{
+
     /* Top-Bottom Left-Right*/
     /*margin:1rem 2rem;*/
 }
