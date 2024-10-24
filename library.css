@@ -1,0 +1,29 @@
+/* Set site-wide properties */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Barlow", "PT Sans", Calibri, Tahoma, sans-serif;
+    font-weight:100;
+    background-color: var(--primary);
+}
+/* Variables */
+:root{
+    --button:rgb(247,202,38);
+    --links:rgb(140, 140, 140); 
+    --primary:rgb(240, 240, 240);
+    --secondary: rgb(167, 167, 167);
+    --tertiary: rgb(110, 116, 102);
+    --quarternary: rgb(37, 150, 190);
+    --quinary: rgb(207, 12, 96);
+    --senary: #111;
+
+    --h1: 2.0rem;
+    --h2: 1.6rem;
+    --h3: 1.4rem;
+    --h4: 1.2rem;
+    --h5: 1rem;
+    --h6: .8rem;
+}

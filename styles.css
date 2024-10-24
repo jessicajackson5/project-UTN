@@ -1,100 +1,113 @@
 /* For mobile phones: */
-/* Variables */
-:root{
-    --size-1: 0.9rem;
-    --size-2: 1.2rem;
-    --size-3: 1.5rem;
-    --size-4: 1.8rem;
-    --size-5: 2.1rem;
-}
-/* Set site-wide properties */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Barlow", "PT Sans", Calibri, Tahoma, sans-serif;
-    font-weight:100;
-}
-html{
 
-    /* Top-Bottom Left-Right*/
-    /*margin:1rem 2rem;*/
-}
 /* Header */
 header{
     display:flex;
-    /* Create space between Name + Nav */
     justify-content: space-between;
-    /* Necessary to align Name and Main Nav blocks */
     align-items: center;
-    padding: 1rem 3rem;
-    /*For testing:*/
-    background-color: red;
+    padding: 1% 26%;
 }
 
-/* Align h1 Name and small Job Title*/
-.site-name{
-    display:flex;  
-    align-items: baseline;
-    /*For testing:*/
-    background-color: rgb(161, 90, 167)
-}
-/* Name*/
-h1{
-    font-size: 18px;
-    font-weight:300;
-    /*For testing:*/
-    background-color: rgb(69, 227, 87)
-
-}
-/* Job Title*/
-small{
-    color: #a7a7a7;
-    font-size: 14px;
-    font-weight: 600;
-    padding-left: 8px;
-    /*For testing:*/
-    background-color: rgb(69, 209, 227)
-}
-
-/* Flex box around Moon Icon and Main Nav on right */
-.main-nav{
+nav{
     display: flex;
-    align-items: center;
-    /*For testing:*/
-    background-color: blanchedalmond;
+    gap: 1rem;
 }
-/* Moon Icon*/
-header>div>a>img{
-    width: 20px;
-    height:fit-content;
-    margin-top: -0.5rem;
-    /*For testing:*/
-    background-color: blueviolet;
+.logo>img{
+    width: 3rem;
+    height: 3rem;
 }
-/* Main Nav*/
-nav>ul{
-    display:flex;
-    list-style: none;
-    /*For testing:*/
-    background-color: rgb(45, 7, 93);
+
+.hello-button {
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    margin: 0;
+    border: 2px solid var(--senary);
+    background-color: var(--button);
+    color: var(--senary);
 }
-nav>ul>li>a{ 
-    float: left;
-    color: #a7a7a7;
-    text-align: right;
-    font-size: 16px;
-    /* Padding Top Right Bottom Left */
-    padding: 1rem 10px 1rem 10px;
-    text-decoration: none;
-    /*For testing:*/
-    background-color: rgb(240, 162, 110);
+
+.hello-button:hover {
+    color: var(--button);
+    transition: all 0.25s ease;
+    background-color: #333;
+    border: 2px solid var(--button);
 }
-nav>ul>li>a:hover{
-    color: rgb(207, 12, 96);
-}
+
 /* Body */
 main{
-
+    padding: 1% 26%;
 }
+.name-title{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Work */
+/* About */
 
+/* Knowledge */
+.knowledge ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+}
+.knowledge li{
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 16px;
+}
+/* Contacts */
+/* Fonts*/
+.intro{
+    font-size: var(--h3);
+    text-align: center;
+    vertical-align: middle;
+}
+h1{    
+    font-size: var(--h1);
+    font-weight: 700;
+    color: #111;
+    margin: 0;
+    padding: 0;
+    margin-top: 5rem;
+}
+h2{
+    margin-bottom: 1rem;
+}
+small{  
+    font-size: var(--h6);
+    color: var(--quarternary);
+}
+a{   
+    font-size: var(--h5);  
+    color: var(--tertiary);
+}
+.work{
+    padding: 1% 26%;
+}
+.about{
+    padding: 1% 26%;
+}
+.about p{
+    color: var(--tertiary);
+    margin-bottom: 1rem;
+}
+.knowledge{
+    padding: 1% 26%;
+}
+.knowledge li i{
+    font-size: var(--h4);
+}
+.knowledge li p{
+    font-size: var(--h5);
+}
+.contact{
+    padding: 1% 26%;
+}

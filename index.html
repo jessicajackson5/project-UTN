@@ -3,35 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jessica Jackson's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Frontend Development | Jessica Jackson</title>
+    <!-- Import Fonts --> 
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Barlow' rel='stylesheet'>
-
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet"> -->
+    <!-- Import Icons -->
+    <script src="https://kit.fontawesome.com/287699a78c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />     
+    <!-- CSS -->
+    <link rel="stylesheet" href="library.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
-        <div class="site-name">
-            <h1>Jessica Jackson</h1><small>Frontend Web Developer</small>
-        </div>
-        <div class="main-nav">
-            <nav>
-                <ul>
-                    <li><a href="/Work/">Work</a></li>
-                    <li><a href="/About/">About</a></li>
-                    <li><a href="/Resume/">Resume</a></li>
-                    <li><a href="/Contact/">Contact</a></li>
-                </ul>
-            </nav>
-            <a href=""><img src="images/moon.png" alt="dark_mode"></a>
-        </div>
+        <div class="logo"><img src="images/logo.png"></div>  
+        <nav>
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="#knowledge">Knowledge</a>
+            <a href="#contact" ><span class="hello-button">Say Hello</span></a>
+        </nav>
     </header>
-    <main>
-        <div class="main-content">
-            <h2>Experience</h2>
-        </div>
+    <main class="name-title">
+        <p class="intro">I design and build useful, usable things.</p>
+        <h1 class="name">Jessica Jackson</h1>
+        <small>Frontend Developer &amp; UI/UX Designer</small>
     </main>
+    <section id="work" class="work"><h2>Work</h2>
+    </section>
+    <section id="about" class="about"><h2>About</h2>
+        <p>As a Senior UX Designer and Junior Front End Developer, I bring a unique perspective to user-centered design that is rooted in creativity, innovation, and strategy. I've worked with innovative technologies and companies that move quickly as well as those who have complex rule sets and regulations, from start-ups to financial giants.</p>
+        <p>I specialize in creating digital experiences that are intuitive, engaging, and effective. My expertise in user research, information architecture, and interaction design as well as my understanding of technology allow me to approach each project with a holistic view of the user journey, ensuring that every touchpoint is optimized for maximum impact. I am well-versed in the latest design tools and methodologies, including Figma and Adobe Creative Suite. I am learning HTML, CSS, Bootstrap, JS, etc.</p>
+        <p>As a UX Designer I understand the importance of meshing business and user goals, and how it plays a crucial role in establishing a minimum viable product. I have worked with a variety of clients, from startups to Fortune 500 companies, in industries such as finance, robotics and technology to create memorable products that resonate with their target audience. </p>
+        <p>I'm a team lead and collaborator who works well in cross-functional teams. I have experience working with developers, designers, product managers, lead software engineers, testers and stakeholders to ensure that design decisions align with business goals and user needs. </p>
+        <p>Whether you're looking to improve the user experience of your digital products or build a new product, I am excited to collaborate with you to bring your vision to life.</p>
+    </section>
+    <section id="knowledge" class="knowledge">
+        <h2>Knowledge</h2>
+        <ul>
+            <li>
+                <i class="fa-brands fa-html5"></i>
+                <p>HTML5</p>
+            </li>
+            <li>
+                <i class="fa-brands fa-css3-alt"></i>
+                <p>CSS3</p>
+            </li>
+            <li>
+                <i class="devicon-javascript-plain"></i>
+                <p>Javascript</p>
+            </li>
+            <li>
+                <i class="fa-brands fa-github"></i>
+                <p>Github</p>
+            </li>
+            <li>
+                <i class="devicon-vscode-plain"></i>
+                <p>VS Code</p>
+            <li>
+                <i class="devicon-react-original"></i>
+                <p>React</p>
+            </li>
+            <li>
+                <i class="devicon-materialui-plain"></i>
+                <p>Material UI</p>
+            </li>
+            <li>
+                <i class="devicon-photoshop-plain"></i>
+                <p>Photoshop</p>
+            </li>
+            <li>
+                <i class="devicon-illustrator-plain"></i>
+                <p>Illustrator</p>
+            </li>
+            <li>
+                <i class="devicon-jira-plain"></i>
+                <p>JIRA</p>
+            </li>
+            <li>
+                <i class="devicon-trello-plain"></i>
+                <p>Trello</p>
+            </li>
+            <li>
+                <i class="devicon-slack-plain"></i>
+                <p>Slack</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact"><h2>Contact</h2>
+    <!--Open contact card-->
+    </section>
 </body>
 </html>
