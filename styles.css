@@ -5,7 +5,7 @@ header{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1% 0;
+    padding-top: 1%;
 }
 body{
     padding-inline: 26%;
@@ -15,6 +15,15 @@ nav{
     display: flex;
     gap: 1rem;
 }
+nav a:hover{
+    color:var(--quarternary);
+}
+/*#menu-toggle { display: none; }
+.menu-toggle-label {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}*/
 .logo>img{
     width: 3rem;
     height: 3rem;
@@ -150,13 +159,33 @@ a{
     color: var(--tertiary);
 }
 
-
 @media (max-width: 950px){
+ 
 }
-@media (max-width: 730px){
-    body{ padding-inline: 15%; }
+@media (max-width: 800px){
+    body{padding-inline: 15%;}
     .intro{font-size: var(--h3);}
-}
+    header nav {
+        display:none;}
+    /*   flex-direction: column;
+        position: absolute;
+        top: calc(50px + 2rem);
+        right: 0;
+        width: 100%;
+        background-color: #aaa;
+        height: calc(100% - 50px - 2rem);
+        text-align: center;
+        z-index: 10;
+        animation: menu 0.4s ease-out forwards;}*/
+
+    /*@keyframes menu {
+        from{ transform: translateX(100%); }
+        to{ transform: translateX(0%); }*/
+
+   /* #menu-toggle:checked + .menu-toggle-label + nav { display: flex; }
+    .menu-toggle-label { display: block; }
+    nav a { padding: 1.25rem; }*/
+
 @media (max-width: 350px){
     .intro{font-size: var(--h5);}
 }
