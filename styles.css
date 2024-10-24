@@ -185,7 +185,7 @@ a{
    /* #menu-toggle:checked + .menu-toggle-label + nav { display: flex; }
     .menu-toggle-label { display: block; }
     nav a { padding: 1.25rem; }*/
-
+    }
 @media (max-width: 350px){
     .intro{font-size: var(--h5);}
 }
