@@ -166,7 +166,7 @@ a{
     body{padding-inline: 15%;}
     .intro{font-size: var(--h3);}
     header nav {
-        display:none;}
+        display: none;}
     /*   flex-direction: column;
         position: absolute;
         top: calc(50px + 2rem);
