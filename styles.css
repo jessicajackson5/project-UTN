@@ -148,6 +148,9 @@ small{
     font-size: var(--h5);
 }
 /* Contacts */
+.contact{
+    margin-bottom: 2rem;
+}
 /* Footer*/
 .foot{
     text-align: center;
