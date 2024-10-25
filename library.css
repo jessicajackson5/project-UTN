@@ -17,7 +17,7 @@
     --tertiary: rgb(110, 116, 102);
     --quarternary: rgb(37, 150, 190);
     --quinary: rgb(207, 12, 96);
-    --senary: #111;
+    --senary: #333;
 
     --h1: 2.0rem;
     --h2: 1.6rem;
@@ -25,4 +25,5 @@
     --h4: 1.2rem;
     --h5: 1rem;
     --h6: .8rem;
+    --h7: .5rem;
 }

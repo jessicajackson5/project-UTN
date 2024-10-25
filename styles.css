@@ -1,5 +1,3 @@
-/* For mobile phones: */
-
 /* Header */
 header{
     display:flex;
@@ -10,20 +8,22 @@ header{
 body{
     padding-inline: 26%;
 }
-
 nav{
     display: flex;
     gap: 1rem;
 }
 nav a:hover{
-    color:var(--quarternary);
+    color:var(--senary);
+    transition: all 0.25s ease;
 }
-/*#menu-toggle { display: none; }
+
+#menu-toggle { display: none; }
+
 .menu-toggle-label {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-}*/
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
 .logo>img{
     width: 3rem;
     height: 3rem;
@@ -32,7 +32,6 @@ nav a:hover{
 .hello-button {
     padding: 0.5rem 1.5rem;
     border-radius: 25px;
-    margin: 0;
     border: 2px solid var(--senary);
     background-color: var(--button);
     color: var(--senary);
@@ -41,21 +40,23 @@ nav a:hover{
 .hello-button:hover {
     color: var(--button);
     transition: all 0.25s ease;
-    background-color: #333;
+    background-color: var(--senary);
+    /*background-color: color-mix(in srgb, rgb(247,202,38),#333 5%);*/
     border: 2px solid var(--button);
 }
 
 h1{    
     font-size: var(--h1);
     font-weight: 700;
-    color: #111;
+    color: var(--senary);
     margin: 0;
     padding: 0;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 h2{
     margin-top: 2rem;
     margin-bottom: 1rem;
+    color: var(--senary);
 }
 small{  
     font-size: var(--h6);
@@ -71,16 +72,17 @@ small{
     position: relative;
 }
 .cloud-img{
-    width: 100%;
+    width: 70%;
     height: auto;
-    justify-content: center;
     z-index: 0;
+    left: 50%;
+    transform: translateX(20%);
+
 }
 .intro{
     font-size: var(--h2);
     text-align: center;
     vertical-align: middle;
-    background-color: transparent;
     /* Position over the cloud*/
     position: absolute;
     top: 35%;
@@ -162,34 +164,43 @@ a{
     font-size: var(--h5);  
     color: var(--tertiary);
 }
-
-@media (max-width: 950px){
- 
+input[type='checkbox']:not(:checked)+ul {
+    display: none;
 }
 @media (max-width: 800px){
     body{padding-inline: 15%;}
     .intro{font-size: var(--h3);}
     header nav {
-        display: none;}
-    /*   flex-direction: column;
+        display: none;
+        flex-direction: column;
         position: absolute;
-        top: calc(50px + 2rem);
+        top: calc(3.5rem);
         right: 0;
         width: 100%;
-        background-color: #aaa;
+        background-color: var(--primary);
         height: calc(100% - 50px - 2rem);
         text-align: center;
         z-index: 10;
-        animation: menu 0.4s ease-out forwards;}*/
-
-    /*@keyframes menu {
-        from{ transform: translateX(100%); }
-        to{ transform: translateX(0%); }*/
-
-   /* #menu-toggle:checked + .menu-toggle-label + nav { display: flex; }
-    .menu-toggle-label { display: block; }
-    nav a { padding: 1.25rem; }*/
+        animation: menu 0.4s ease-out forwards;
     }
+    @keyframes menu {
+        from{ transform: translateX(100%); }
+        to{ transform: translateX(0%); }
+    }
+    #menu-toggle:checked + .menu-toggle-label + nav { 
+        display: flex; 
+        color:var(--senary); 
+    }
+    .menu-toggle-label { display: block; }
+    nav a { 
+        color: var(--senary);
+        font-size: var(--h2);
+        padding: 1.25rem;
+    }
+}
+@media (maxwidt: 540px){
+    .intro{font-size: var(--h6);}
+}
 @media (max-width: 350px){
-    .intro{font-size: var(--h5);}
+    .intro{font-size: var(--h6);}
 }
