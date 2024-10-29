@@ -27,3 +27,6 @@
     --h6: .8rem;
     --h7: .5rem;
 }
+/* Display*/
+.flex{ display: flex;}
+.grid{ display: grid;}
