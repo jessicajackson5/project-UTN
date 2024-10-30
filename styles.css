@@ -147,7 +147,7 @@ small{
 .knowledge li p{
     font-size: var(--h5);
 }
-/* Contacts */
+/* Contact Form */
 .contact{
     display: flex;
     gap: 1rem;
@@ -166,9 +166,10 @@ small{
 }
 .field{
     width: 100%;
-    border: 1px sold #333;
+    border: 1px solid #333;
     border-radius: 5px;
     margin-top: 0.5rem;
+    padding:  0.5rem;
 }
 .input-fullwidth{
     width: 100%;
@@ -183,6 +184,7 @@ textarea{
     width: 100%;
     border-radius: 15px;
     margin-top: 0.5rem;
+    padding:  0.5rem;
 }
 .submit-button{
     display: flex;
