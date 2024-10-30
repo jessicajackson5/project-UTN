@@ -277,9 +277,11 @@ input[type='checkbox']:not(:checked)+ul {
     body{padding-inline: 6%;}
     .intro{
         font-size: var(--h6);
-        top: 25%;
+        top: 30%;
     }
-  
+    h1{    
+        font-size: var(--h2);
+    }
     .card{
         padding: 1rem;
         max-width: 100%;
@@ -298,3 +300,8 @@ input[type='checkbox']:not(:checked)+ul {
         text-overflow: ellipsis;
     }
 }
+@media (max-width: 230px){
+    .intro{
+        font-size: var(--h7);
+        top: 17%;
+    }
