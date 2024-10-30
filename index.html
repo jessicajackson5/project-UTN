@@ -39,27 +39,27 @@
     </main>
     <section id="work">
         <h2>Work</h2>
-        <div class="work-grid grid">
-            <div class="card flex">
+        <div class="work-grid">
+            <div class="card">
                 <img class="img-card" alt="Fiber Design" src="images/AppInTheField.png">
                 <strong class="work-title">Fiber Broadband</strong>
                 <p class="description">A fiber broadband Internet service provider came to us for digital transformation using augmented reality (AR) technologies. I designed the AR interface, led the team that built the app, conducted a field usability study, and proposed a more efficient workflow which my team then implemented. </p>
             </div>
-            <div class="card flex">
+            <div class="card">
                 <img class="img-card" alt="Fiber Design" src="images/AppInTheField.png">
                 <strong class="work-title">Client A</strong>
                 <p class="description">A fiber broadband Internet service provider came to us for digital transformation using augmented reality (AR) technologies. I designed the AR interface, led the team that built the app, conducted a field usability study, and proposed a more efficient workflow which my team then implemented. </p>
             </div>
-            <div class="card flex">
+            <div class="card">
                 <img class="img-card" alt="Fiber Design" src="images/AppInTheField.png">
                 <strong class="work-title">Client A</strong>
                 <p class="description">A fiber broadband Internet service provider came to us for digital transformation using augmented reality (AR) technologies. I designed the AR interface, led the team that built the app, conducted a field usability study, and proposed a more efficient workflow which my team then implemented. </p>
             </div>
-            <div class="card flex">
+            <div class="card">
                 <img class="img-card" loading="lazy" alt="Fiber Design" src="images/AppInTheField.png">
                 <strong class="work-title">Client A</strong>
                 <p class="description">A fiber broadband Internet service provider came to us for digital transformation using augmented reality (AR) technologies. I designed the AR interface, led the team that built the app, conducted a field usability study, and proposed a more efficient workflow which my team then implemented. </p>
-s            </div>
+                </div>
         </div>
         
 
@@ -127,21 +127,24 @@ s            </div>
 
     <section id="contact" class="contact"><h2>Contact</h2>
         <h3 class="thanks">Thanks for taking the time to reach out. How can I help you today?</h3>
-        <div class="form-container">
             <form action="">
-                <div class="input-large">
-                    <label class="label" for="name">Name</label>
-                    <input class="large-input" type="text" id="name" name="name" required>
-                </div>
-                <div class="input-large">   
-                    <label class="label" for="email">Email</label>
-                    <input class="large-input" type="email" id="email" name="email" required>
+                <div class="flex-input">
+                    <div class="field-input">
+                        <label class="label" for="name">Name</label>
+                        <input class="field" type="text" id="name" name="name" required>
+                    </div>
+                    <div class="field-input">   
+                        <label class="label" for="email">Email</label>
+                        <input class="field" type="email" id="email" name="email" required>
+                    </div>
                 </div>
                 <div class="input-fullwidth">
                     <label class="label" for="message">Message</label>
                     <textarea data-expandable id="message" name="message" required></textarea>
                 </div>
-                <input type="submit" value="Submit">
+                <div class="submit-button">
+                    <input type="submit" value="Submit">
+                </div>
             </form>
         </div>
     </section>
