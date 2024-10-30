@@ -301,7 +301,19 @@ input[type='checkbox']:not(:checked)+ul {
     }
 }
 @media (max-width: 230px){
+    .cloud-img{
+        width: 90%;
+        height: auto;
+        z-index: 0;
+        padding-top: 1%;
+        transform: translateX(5%);
+    }
     .intro{
         font-size: var(--h7);
-        top: 17%;
+        top: 20%;
     }
+    .work-title{
+        font-weight:bold;
+        font-size: var(--h6);
+    }
+}
